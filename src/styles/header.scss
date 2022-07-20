@@ -1,0 +1,199 @@
+$p-color: #ff0055;
+
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+    width: 100%;
+}
+.header{
+    background-color: black;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    z-index: 10000;
+    flex-direction: row;
+    color: white;
+    padding: 10px 10%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    color: white;
+}
+.logo{
+    padding: 0px 50px 0px 0px;
+    font-size: larger;
+    font-weight: bold;
+}
+.logo::first-letter{
+    color: $p-color;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+
+    a{
+        padding: 0px 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: large;
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        color: $p-color;
+    }
+}
+.btn{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 30px;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    font-size: large;
+
+    a{
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    a:hover{
+        color: $p-color;
+    }
+    button{
+        border: none;
+        background: rgba($color: #b4b4b4, $alpha: 0.6);
+        padding: 10px 20px;
+        width: fit-content;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: large;
+    }
+    button:hover{
+        background: $p-color;
+        color: white;
+    }
+}
+.nav-icon{
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    display: none;
+
+    img{
+        height: 30px;
+        width: 30px;
+        filter: invert(100%);
+    }
+}
+
+
+
+.header-2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 5px;
+    padding: 15px 10%;
+    position: fixed;
+    z-index: 10000;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    align-content: flex-start;
+    background: white;
+    transition: 0.3s;
+
+    .logo{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        padding: 0px;
+    }
+    .nav{
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 2px;
+        width: 100%;
+        padding: 2px 0px;
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        
+        a{
+            padding: 10px 0px;
+            border-bottom: solid 1px grey;
+            color: black;
+        }
+        a:hover{
+            border-left: solid 5px $p-color;
+            padding-left: 10px;
+        }
+    }
+    .btn{
+        width: 100%;
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 15px;
+        justify-items: center;
+        padding: 20px;
+
+        a{
+            color: black;
+        }
+
+        button{
+            border: none;
+            color: white;
+        }
+        button:hover{
+            color: white;
+        }
+    }
+    .nav-icon{
+        grid-column-start: 4;
+        grid-row-start: 1;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        img{
+            width: 25px;
+            filter: invert(100%);
+        }
+    }
+}
+.ScrollHandler{
+    background: black;
+    color: white;
+
+    a{
+        color: white;
+    }
+    .nav-icon{
+        filter: invert(100%);
+    }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .nav, .btn{
+        display: none;
+    }
+    .nav-icon{
+        display: block;
+        filter: invert(100%);
+    }
+}

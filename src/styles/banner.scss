@@ -1,0 +1,75 @@
+$p-color: #ff0055;
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner{
+    width: 100%;
+    height: fit-content;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.643);
+    background-blend-mode: overlay;
+    padding: 12vw 20%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 20px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+    h1, p, button{
+        height: fit-content;
+        width: fit-content;
+    }
+
+    h1{
+        font-size: 350%;
+    }
+    p{
+        font-size: larger;
+    }
+    button{
+        background: $p-color;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        font-size: larger;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .banner{
+        h1{
+            font-size: 200%;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .banner{
+        padding: 20vw 10%;
+        h1{
+            font-size: 150%;
+        }
+        p{
+            font-size: 15px;
+        }
+        button{
+            font-size: 12px;
+            padding: 10px 20px;
+        }
+    }
+}

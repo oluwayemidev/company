@@ -1,0 +1,113 @@
+$p-color: #ff0055;
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html, body{
+    height: 100vh;
+    width: 100%;
+}
+
+.footer{
+    height: fit-content;
+    background-color: black;
+    padding: 50px 10%;
+    grid-column-gap: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.footer .logo{
+    padding: 0px 50px 0px 0px;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    width: fit-content;
+}
+.menu{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    width: fit-content;
+
+    a{
+        color: rgb(218, 218, 218);
+        text-decoration: none;
+    }
+    a:hover{
+        color: $p-color;
+        transition: 0.3s;
+    }
+}
+.searchArea{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+
+    input{
+        border: solid 2px rgb(201, 201, 201);
+        background: transparent;
+        color: rgb(201, 201, 201);
+        border-radius: 8px;
+        outline: none;
+        padding: 15px 50px 15px 20px;
+    }
+    input::placeholder{
+        color: rgb(201, 201, 201);
+    }
+    img{
+        height: 25px;
+        transform: translate(calc(-100% - 10px), 0%);
+        cursor: pointer;
+    }
+    p{
+        color: rgb(201, 201, 201);
+    }
+}
+.socialMedia{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    img{
+        height: 25px;
+        cursor: pointer;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .footer{
+        grid-template-columns: auto auto;
+        grid-row-gap: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer{
+        grid-template-columns: 100%;
+        grid-row-gap: 30px;
+
+        div{
+            width: 100%;
+        }
+
+        .searchArea{
+            grid-template-columns: 100% auto;
+            grid-row-gap: 10px;
+        }
+
+        .socialMedia{
+            width: fit-content;
+            grid-gap: 30px;
+        }
+    }
+}
