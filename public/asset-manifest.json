@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.41721f10.css",
+    "main.js": "/static/js/main.bd12e317.js",
+    "static/js/787.9ecde847.chunk.js": "/static/js/787.9ecde847.chunk.js",
+    "static/media/course4.jpg": "/static/media/course4.5f00f69dab3567e19c43.jpg",
+    "static/media/course1.jpg": "/static/media/course1.23d3d59f0643f1d176a2.jpg",
+    "static/media/learnNewSkills.jpg": "/static/media/learnNewSkills.718ff85ba58e47b18ca5.jpg",
+    "static/media/lapi.jpg": "/static/media/lapi.440957db4fbe84e7524c.jpg",
+    "static/media/course3.jpg": "/static/media/course3.8d0a5bede05dcaf1dd43.jpg",
+    "static/media/testYourSkills.jpg": "/static/media/testYourSkills.289d48f1c2de4be79085.jpg",
+    "static/media/banner.jpg": "/static/media/banner.f65d9ef217f9b7e414a0.jpg",
+    "static/media/askQuestions.jpg": "/static/media/askQuestions.a4fe8f6c1f09af034247.jpg",
+    "static/media/avatar.jpg": "/static/media/avatar.272680baa7749c709138.jpg",
+    "static/media/course2.jpg": "/static/media/course2.3075cf72a1ff0c5599de.jpg",
+    "static/media/instagram.svg": "/static/media/instagram.686d86871525fdbc44a3d38c25cf0805.svg",
+    "index.html": "/index.html",
+    "static/media/twitter.svg": "/static/media/twitter.8f94fa9925914dd344a27712e98c92b2.svg",
+    "static/media/facebook.svg": "/static/media/facebook.53eaefd13f44ee6a0c982f54e64d2a12.svg",
+    "static/media/sendFill.svg": "/static/media/sendFill.13b6b0c3a8c85b9a34accb5b0df47e46.svg",
+    "static/media/list.svg": "/static/media/list.91468272b5ecd729c30be794c048ecc1.svg",
+    "static/media/times.svg": "/static/media/times.f520e54c746f7505bec401e45a68a2de.svg",
+    "static/media/clock.svg": "/static/media/clock.06eb5fae57b4305d9026ebcf66066f68.svg",
+    "main.41721f10.css.map": "/static/css/main.41721f10.css.map",
+    "main.bd12e317.js.map": "/static/js/main.bd12e317.js.map",
+    "787.9ecde847.chunk.js.map": "/static/js/787.9ecde847.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41721f10.css",
+    "static/js/main.bd12e317.js"
+  ]
+}
