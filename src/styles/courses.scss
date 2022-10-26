@@ -208,6 +208,12 @@ $p-color: #ff0055;
     .courses-container{
         width: 100%;
 
+        .course-header{
+            h2, .filter, .recent, .popular{
+                display: none;
+            }
+        }
+
         .course{
             width: 95%;
         }
