@@ -77,3 +77,10 @@ $p-color: #ff0055;
         }
     }
 }
+
+
+@media screen and (max-height: 600px) {
+    .container-contact{
+        height: 600px;
+    }
+}
