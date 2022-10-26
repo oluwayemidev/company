@@ -213,7 +213,7 @@ $p-color: #ff0055;
                 display: none;
             }
             .search{
-                width: 100%;
+                width: calc(100% - 40px);
             }
         }
 
