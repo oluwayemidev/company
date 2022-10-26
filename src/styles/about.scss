@@ -56,17 +56,19 @@ $p-color: #ff0055;
 
 @media screen and (max-width: 750px) {
     .container-about{
+        width: 100%;
         
         .banner2{
-            font-size: 50px;
+            font-size: 40px;
             height: 100px;
         }
 
         .desc{
-            padding: 30px 0px;
+            width: 100%;
+            padding: 30px 20px;
 
             h1{
-                font-size: 40px;
+                font-size: 30px;
             }
             p:nth-child(2){
                 font-size: 20px;
