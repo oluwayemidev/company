@@ -208,6 +208,10 @@ $p-color: #ff0055;
     .courses-container{
         width: 100%;
 
+        .course{
+            width: 90%;
+        }
+
         .course-footer{
             grid-column-gap: 5px;
 
