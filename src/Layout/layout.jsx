@@ -42,7 +42,6 @@ function Layout(props){
                 <div className='nav'>
                     <Link onClick={activeToggle} to='/'>Home</Link>
                     <Link onClick={activeToggle} to='/courses'>Courses</Link>
-                    <Link onClick={activeToggle} to='/products'>Products</Link>
                     <Link onClick={activeToggle} to='/blog'>Blog</Link>
                     <Link onClick={activeToggle} to='/about'>About</Link>
                     <Link onClick={activeToggle} to='/contact'>Contact</Link>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import '../../styles/blog.css';
 import lapi from "../../images/lapi.jpg";
 import learnNewSkills from '../../images/learnNewSkills.jpg';
@@ -9,7 +9,8 @@ import course1 from '../../images/course1.jpg';
 import course2 from '../../images/course2.jpg';
 import course3 from '../../images/course3.jpg';
 import course4 from '../../images/course4.jpg';
-import blog from '../../Json/blog.json';
+
+
 
 const slideImages = [
     {
@@ -74,7 +75,10 @@ function Trending() {
         month[11] = "December";
         var monthName = month[date.getMonth()];
         var day = weekday[date.getDay()];
-        document.getElementById("timer").innerHTML = day + ", " + monthName + " " + date.getDate() + ", " + date.getFullYear() + " " + time;
+
+        if(document.getElementById("timer")){
+            return document.getElementById("timer").innerHTML = day + ", " + monthName + " " + date.getDate() + ", " + date.getFullYear() + " " + time;
+        }
     }
 
 
@@ -88,7 +92,21 @@ function Trending() {
     </React.Fragment>
 }
 
-function Blogs(){
+function Blogs(props){
+    let [blog, setBlogs] = useState([]);
+    // let [blogImages, setBlogImages] = useState([]);
+
+    useEffect(() => {
+        // fetch('/api/blogs/images')
+        //     .then(res => re)
+    })
+
+    useEffect(() => {
+        fetch('/api/Blogs')
+            .then(res => res.json())
+            .then(data => setBlogs((data), console.log('Blogs fetched...', data)));
+    },[]);
+
     function myTimer(d) {
         var date = new Date(d);
     
@@ -118,10 +136,11 @@ function Blogs(){
         var day = weekday[date.getDay()];
         return day + ", " + monthName + " " + date.getDate() + ", " + date.getFullYear();
     }
-    const myBlog = blog.map((blogPost) => 
+    const myBlog = blog.map((blogPost, id) => 
         <React.Fragment>
-            <div className='blog'>
-                <div className="image" style={{backgroundImage: `url(${blogPost.path})`}}></div>
+            <div key={id} className='blog'>
+                <div className="image" style={{backgroundImage: `url(${'http://localhost:5000/api/Blog/images/' + blogPost.path})`}}></div>
+                {console.log(blogPost.path)}
                 <div className="heading">
                     <span>{blogPost.tag}</span> / <span>{myTimer(blogPost.time)}</span>
                 </div>

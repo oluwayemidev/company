@@ -181,6 +181,7 @@ $p-color: #ff0055;
             }
             p{
                 padding: 0px 30px 30px 30px;
+                word-wrap: break-word;
             }
             p::after{
                 content: "...";
