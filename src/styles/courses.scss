@@ -206,6 +206,7 @@ $p-color: #ff0055;
 
 @media screen and (max-width: 500px){
     .courses-container{
+        width: 100%;
 
         .course-footer{
             grid-column-gap: 5px;
