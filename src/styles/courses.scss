@@ -213,7 +213,10 @@ $p-color: #ff0055;
                 display: none;
             }
             .search{
-                width: calc(100% - 40px);
+                width: 100%;
+            }
+            .search-icon{
+                position: absolute;
             }
         }
 
