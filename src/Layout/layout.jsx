@@ -62,7 +62,6 @@ function Layout(props){
                 <div className="menu">
                     <Link to='/'>Home</Link>
                     <Link to='/courses'>Courses</Link>
-                    <Link to='/products'>Products</Link>
                     <Link to='/blog'>Blog</Link>
                     <Link to='/about'>About</Link>
                     <Link to='/contact'>Contact</Link>

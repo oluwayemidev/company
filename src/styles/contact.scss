@@ -84,3 +84,9 @@ $p-color: #ff0055;
         height: 600px;
     }
 }
+
+@media screen and (min-width: 500px) and (max-height: 600px) {
+    .container-contact{
+        height: fit-content;
+    }
+}

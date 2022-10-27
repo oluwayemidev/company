@@ -179,8 +179,15 @@ function NewsBanner(){
                 <Blogs/>
             </div>
 
-            <div className="follow-">
+            <div className="follow">
+                <div>Follow Us</div>
 
+                <div>Facebook</div>
+                <div>Twitter</div>
+                <div>Instagram</div>
+                <div>Youtube</div>
+                <div>LinkedIn</div>
+                <div>Whatsapp</div>
             </div>
         </div>
     </React.Fragment>

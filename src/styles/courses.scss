@@ -141,6 +141,8 @@ $p-color: #ff0055;
                     padding: 5px 10px;
                     border-radius: 5px;
                     cursor: pointer;
+                    font-size: 12px;
+                    font-weight: bold;
                 }
                 div:last-child:hover{
                     background-color: $p-color;
@@ -222,16 +224,25 @@ $p-color: #ff0055;
         }
 
         .course-footer{
-            grid-column-gap: 5px;
+            justify-content: space-between;
 
             button{
-                font-size: 10px;
+                font-size: 15px;
                 padding: 3px 6px;
 
                 img{
-                    width: 11px;
+                    width: 17px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .courses-container{
+
+        .course-footer{
+            grid-column-gap: 5px;
         }
     }
 }
