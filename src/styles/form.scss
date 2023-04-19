@@ -118,6 +118,7 @@ $p-color: #ff0055;
 
 @media screen and (max-width: 500px) {
     .container-form{
+        padding: 100px 2%;
         .box{
             display: flex;
             flex-direction: column;
