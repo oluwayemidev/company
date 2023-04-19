@@ -65,6 +65,9 @@ html, body{
     a:hover{
         color: $p-color;
     }
+    a:last-child:hover{
+        color: white;
+    }
     button{
         border: none;
         background: rgba($color: #b4b4b4, $alpha: 0.6);

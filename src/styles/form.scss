@@ -1,0 +1,57 @@
+$p-color: #ff0055;
+
+.container-form{
+    padding: 100px 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .box{
+        width: 50%;
+        height: 500px;
+    }
+    .box:first-child{
+        background-color: rgba(0, 0, 0, 0.589);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        border-radius: 8px 0px 0px 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        perspective: 100px;
+
+        button{
+            background-color: $p-color;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            border-radius: 9px;
+            animation: btn 2s ease 0.3s infinite;
+            perspective: 100px;
+            transform-style: preserve-3d;
+            box-shadow: inset 0px 2px 5px 0px #460118;
+            box-shadow: 0px 2px 15px 1px #b8013e;
+        }
+    }
+    .box:last-child{
+        border: solid 2px $p-color;
+        border-left: none;
+        border-radius: 0px 8px 8px 0px;
+    }
+}
+
+@keyframes btn {
+    0%{
+        transform: rotateX(0deg);
+    }
+    50%{
+        transform: rotateX(30deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}

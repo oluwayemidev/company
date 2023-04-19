@@ -47,8 +47,8 @@ function Layout(props){
                     <Link onClick={activeToggle} to='/contact'>Contact</Link>
                 </div>
                 <div className='btn'>
-                    <a href="$">Log in</a>
-                    <button>Start for free</button>
+                    <Link onClick={activeToggle} to='/login'>Log in</Link>
+                    <button><Link onClick={activeToggle} to='/signup'>Start for free</Link></button>
                 </div>
                 <div className="nav-icon" onClick={toggleClass}>
                     <img src={isActive ? times : list} alt="menu" />

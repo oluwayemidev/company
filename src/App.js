@@ -5,6 +5,8 @@ import Blog from './Pages/Blog/blog';
 import About from './Pages/About/about';
 import Contact from './Pages/Contact/contact';
 import Courses from './Pages/Courses/courses';
+import Signup from './Pages/Form/signup';
+import Login from './Pages/Form/login';
 import ScrollToTop from './components/customers/ScrollToTop';
 
 
@@ -21,6 +23,8 @@ function App() {
             <Route path='contact' element={<Contact />} />
             <Route path='blog' element={<Blog />} />
             <Route path='courses' element={<Courses />} />
+            <Route path='signup' element={<Signup />} />
+            <Route path='login' element={<Login />} />
           </Route>
         </Routes>
       </BrowserRouter>
