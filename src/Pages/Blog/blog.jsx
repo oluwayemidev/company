@@ -140,8 +140,8 @@ function Blogs(props){
     const myBlog = blog.slice(0, 8).map((blogPost, id) => 
         <React.Fragment>
             <div key={id} className='blog'>
-                {/* <div className="image" style={{backgroundImage: `url(${'https://oyemsite.oluwayemi.repl.co/api/Blog/images/' + blogPost.path})`}}></div> */}
-                <div className="image" style={{backgroundImage: `url(${'localhost:5000/api/Blog/images/' + blogPost.path})`}}></div>
+                <div className="image" style={{backgroundImage: `url(${'https://oyemsite.oluwayemi.repl.co/api/Blog/images/' + blogPost.path})`}}></div>
+                {/* <div className="image" style={{backgroundImage: `url(${'localhost:5000/api/Blog/images/' + blogPost.path})`}}></div> */}
                 {console.log(blogPost.path)}
                 <div className="heading">
                     <span>{blogPost.tag}</span> / <span>{myTimer(blogPost.time)}</span>
@@ -199,8 +199,8 @@ function SubBlog(){
     const myBlog = blog.slice(0, 6).map((blogPost, id) => 
         <React.Fragment>
             <div key={id} className='subBlog'>
-                {/* <div className="image" style={{backgroundImage: `url(${'https://oyemsite.oluwayemi.repl.co/api/Blog/images/' + blogPost.path})`}}></div> */}
-                <div className="image" style={{backgroundImage: `url(${'localhost:5000/api/Blog/images/' + blogPost.path})`}}></div>
+                <div className="image" style={{backgroundImage: `url(${'https://oyemsite.oluwayemi.repl.co/api/Blog/images/' + blogPost.path})`}}></div>
+                {/* <div className="image" style={{backgroundImage: `url(${'localhost:5000/api/Blog/images/' + blogPost.path})`}}></div> */}
                 {console.log(blogPost.path)}
                 <div className="heading">
                     <span>{blogPost.tag}</span> / <span>{myTimer(blogPost.time)}</span>
