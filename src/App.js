@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Layout/layout';
 import Home from './Pages/Home/home';
 import Blog from './Pages/Blog/blog';
+import SingleBlog from './Pages/Blog/singleblog';
 import About from './Pages/About/about';
 import Contact from './Pages/Contact/contact';
 import Courses from './Pages/Courses/courses';
@@ -22,6 +23,7 @@ function App() {
             <Route path='about' element={<About />} />
             <Route path='contact' element={<Contact />} />
             <Route path='blog' element={<Blog />} />
+            <Route path='singleblog' element={<SingleBlog />} />
             <Route path='courses' element={<Courses />} />
             <Route path='signup' element={<Signup />} />
             <Route path='login' element={<Login />} />

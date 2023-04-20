@@ -7,7 +7,7 @@ $p-color: #ff0055;
     width: 100%;
     background-color: white;
     color: grey;
-    padding: 0px 10%;
+    padding: 0px 5%;
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
@@ -30,7 +30,7 @@ $p-color: #ff0055;
 .newsBanner{
     width: 100%;
     height: fit-content;
-    padding: 30px 10%;
+    padding: 30px 5%;
     display: grid;
     grid-row-gap: 20px;
     grid-template-columns: 68% 30%;
@@ -144,6 +144,7 @@ $p-color: #ff0055;
         .blog{
             background-color: rgb(238, 238, 238);
             color: gray;
+            padding-bottom: 30px;
 
             .image{
                 width: 100%;
@@ -181,12 +182,25 @@ $p-color: #ff0055;
                 color: $p-color;
                 text-decoration: underline;
             }
-            p{
+            p:nth-child(4){
                 padding: 0px 30px 30px 30px;
                 word-wrap: break-word;
             }
-            p::after{
+            p:nth-child(4):after{
                 content: "...";
+            }
+            > p:last-child{
+                border: solid 1px #ffc5d8;
+                height: fit-content;
+                width: fit-content;
+                padding: 5px 15px;
+                font-size: 12px;
+                margin-left: 30px;
+                cursor: pointer;
+            }
+            > p a{
+                text-decoration: none;
+                color: $p-color;
             }
 
         }
@@ -382,6 +396,11 @@ $p-color: #ff0055;
         }
     }
 }
+
+.singleblog{
+    margin-top: 70px;
+}
+
 
 @media screen and (max-width: 1115px) {
     .newsBanner{
